@@ -385,3 +385,38 @@ html {
 .skill-fill.css { width: 83%; }
 .skill-fill.js { width: 70%; }
 .skill-fill.canva { width: 90%; }
+.strengths {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.strengths h2 {
+  font-size: 1.6rem;
+  color: #5a8fff;
+  margin-bottom: 20px;
+}
+
+.tags-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tag {
+  background-color: #161a22;
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: #5a8fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 0 12px rgba(90, 143, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  transform-style: preserve-3d;
+}
+
+.tag:hover {
+  transform: scale(1.05) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 6px 18px rgba(90, 143, 255, 0.3);
+}
