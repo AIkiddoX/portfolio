@@ -472,4 +472,94 @@ html {
     margin: 4px;
   }
 }
+/* Section spacing fix */
+.pricing {
+  margin: 100px 0 60px;
+  text-align: center;
+}
+
+/* Grid layout stays the same */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+/* Card styling fix */
+.price-card {
+  background-color: #161a22;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(90, 143, 255, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  max-width: 300px;
+  text-align: left;
+  margin-bottom: 40px; /* 👈 spacing from Portfolio */
+}
+
+.price-card:hover {
+  transform: translateY(-8px) rotateX(3deg) rotateY(-2deg);
+  box-shadow: 0 16px 40px rgba(90, 143, 255, 0.2);
+}
+
+.price-card h3 {
+  color: #5a8fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-card .price {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.price-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.price-card ul li {
+  color: #ccc;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.price-card ul li::before {
+  content: "✔";
+  color: #5a8fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Button fix */
+.price-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #5a8fff, #407de8);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(90, 143, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-btn:hover {
+  transform: translateY(-4px) rotateX(4deg) rotateY(-2deg);
+  box-shadow: 0 12px 25px rgba(90, 143, 255, 0.4);
+}
 
