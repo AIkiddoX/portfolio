@@ -330,3 +330,58 @@ html {
 .certificate-section img:hover {
   transform: scale(1.02) rotateX(3deg) rotateY(-3deg);
 }
+.skills {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #5a8fff;
+  margin-bottom: 30px;
+}
+
+.skill-box {
+  margin-bottom: 25px;
+  text-align: left;
+  background: #161a22;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(90, 143, 255, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 12px 28px rgba(90, 143, 255, 0.3);
+}
+
+.skill-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.skill-bar {
+  background: #0f1117;
+  height: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.05);
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #5a8fff, #407de8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(90, 143, 255, 0.4);
+  transition: width 1s ease-in-out;
+}
+
+/* Skill % widths */
+.skill-fill.html { width: 93%; }
+.skill-fill.css { width: 83%; }
+.skill-fill.js { width: 70%; }
+.skill-fill.canva { width: 90%; }
