@@ -668,4 +668,72 @@ html {
   transform: translateY(-5px) rotateX(3deg) rotateY(-2deg);
   box-shadow: 0 12px 30px rgba(90, 143, 255, 0.4);
 }
+.service-pricing {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.service-pricing h2 {
+  font-size: 2rem;
+  color: #5a8fff;
+  margin-bottom: 30px;
+}
+
+.pricing-packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+.pricing-tier {
+  background-color: #161a22;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(90, 143, 255, 0.12);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  text-align: left;
+}
+
+.pricing-tier:hover {
+  transform: translateY(-6px) rotateX(3deg) rotateY(-2deg);
+  box-shadow: 0 12px 28px rgba(90, 143, 255, 0.2);
+}
+
+.pricing-tier h3 {
+  color: #5a8fff;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.pricing-tier .price {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.pricing-tier ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pricing-tier ul li {
+  color: #ccc;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.pricing-tier ul li::before {
+  content: "✔";
+  color: #5a8fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
