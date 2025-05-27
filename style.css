@@ -137,20 +137,40 @@ section p {
   font-size: 0.95rem;
   color: #ccc;
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
+.footer-bar {
+  width: 100%;
   background-color: #0d0f14;
-  margin-top: 60px;
+  padding: 3px 0;
+  color: #ccc;
+  text-align: center;
+  margin-top: 80px;
   font-size: 0.95rem;
-  color: #888;
+  box-shadow: 0 -5px 20px rgba(90, 143, 255, 0.07);
+  border-top: 1px solid #1c1f26;
 }
 
-footer a {
+.footer-bar .brand-name {
+  color: #5a8fff;
+  font-weight: 700;
+}
+
+.footer-bar a {
   color: #5a8fff;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 6px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-bar a:hover {
+  color: #82b3ff;
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 /* --- Contact Section --- */
 .contact-section {
