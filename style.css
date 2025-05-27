@@ -609,4 +609,63 @@ html {
   font-weight: 600;
   font-size: 0.9rem;
 }
+.contact-form {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #5a8fff;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.form-box {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-box input,
+.form-box textarea {
+  background-color: #161a22;
+  border: 1px solid #5a8fff44;
+  padding: 14px 18px;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  outline: none;
+  border: 1px solid #5a8fff;
+}
+
+.form-box button {
+  padding: 14px;
+  font-size: 1rem;
+  background: linear-gradient(145deg, #5a8fff, #407de8);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(90, 143, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box button:hover {
+  transform: translateY(-5px) rotateX(3deg) rotateY(-2deg);
+  box-shadow: 0 12px 30px rgba(90, 143, 255, 0.4);
+}
 
