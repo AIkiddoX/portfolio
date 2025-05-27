@@ -140,7 +140,7 @@ section p {
 .footer-bar {
   width: 100%;
   background-color: #0d0f14;
-  padding: 5px 0;
+  padding: 3px 0;
   color: #ccc;
   text-align: center;
   margin-top: 80px;
@@ -172,6 +172,7 @@ section p {
   line-height: 1.6;
   font-size: 0.95rem;
 }
+
 /* --- Contact Section --- */
 .contact-section {
   margin-top: 60px;
