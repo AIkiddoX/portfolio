@@ -331,56 +331,56 @@ html {
   transform: scale(1.02) rotateX(3deg) rotateY(-3deg);
 }
 .skills {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
 }
 
 .skills h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #5a8fff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .skill-box {
-  margin-bottom: 25px;
-  text-align: left;
+  margin-bottom: 18px;
   background: #161a22;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(90, 143, 255, 0.1);
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(90, 143, 255, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   transform-style: preserve-3d;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-box:hover {
-  transform: translateY(-6px) rotateX(3deg) rotateY(-3deg);
-  box-shadow: 0 12px 28px rgba(90, 143, 255, 0.3);
+  transform: translateY(-4px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: 0 8px 24px rgba(90, 143, 255, 0.2);
 }
 
 .skill-title {
   font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
   color: #ccc;
 }
 
 .skill-bar {
   background: #0f1117;
-  height: 16px;
-  border-radius: 10px;
+  height: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.05);
 }
 
 .skill-fill {
   height: 100%;
   background: linear-gradient(90deg, #5a8fff, #407de8);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(90, 143, 255, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(90, 143, 255, 0.3);
   transition: width 1s ease-in-out;
 }
 
-/* Skill % widths */
 .skill-fill.html { width: 93%; }
 .skill-fill.css { width: 83%; }
 .skill-fill.js { width: 70%; }
